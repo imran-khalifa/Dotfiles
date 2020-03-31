@@ -306,8 +306,8 @@ animation-charging-framerate = 750
 animation-discharging-0 = 
 animation-discharging-1 = 
 animation-discharging-2 = 
-animation-discharging-foreground = ${colors.foreground-alt}
-animation-discharging-background = ${colors.background-alt}
+animation-discharging-foreground = ${colors.foreground}
+animation-discharging-background = ${colors.background}
 animation-discharging-framerate = 750
 
 [module/temperature]
