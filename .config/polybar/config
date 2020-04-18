@@ -51,7 +51,7 @@ padding-right = 1
 module-margin-left = 0
 module-margin-right = 1
 
-font-0 = Inconsolata:style=Bold:size=10;0
+font-0 = Source Code Pro:style=Bold:size=9;1
 font-1 = siji:pixelsize=10;1
 
 modules-left = i3
@@ -76,7 +76,7 @@ cursor-scroll = ns-resize
 
 [module/xwindow]
 type = internal/xwindow
-label = %title:0:25:...%
+label = %title:0:40:...%
 
 [module/xkeyboard]
 type = internal/xkeyboard
@@ -207,20 +207,25 @@ interface = wlan0
 interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
-format-connected-underline = #9f78e1
+format-connected-underline = ${colors.foreground-alt}
+format-connected-foreground = ${colors.foreground-alt}
+format-connected-background = ${colors.background-alt}
+format-connected-padding = 1
 label-connected = %essid%
+label-connected-foreground = ${colors.foreground-alt}
 
 format-disconnected = <label-disconnected>
 format-disconnected-underline = ${self.format-connected-underline}
+format-disconnected-padding = 1
 label-disconnected = %ifname% disconnected
-label-disconnected-foreground = ${colors.foreground}
+label-disconnected-foreground = ${colors.foreground-alt}
 
 ramp-signal-0 = 
 ramp-signal-1 = 
 ramp-signal-2 = 
 ramp-signal-3 = 
 ramp-signal-4 = 
-ramp-signal-foreground = ${colors.foreground}
+ramp-signal-foreground = ${colors.foreground-alt}
 
 [module/eth]
 type = internal/network
@@ -286,28 +291,32 @@ adapter = AC
 full-at = 98
 
 format-charging = <animation-charging> <label-charging>
+format-charging-padding = 1
+format-charging-foreground = ${colors.foreground-alt}
+format-charging-background = ${colors.background-alt}
 
 format-discharging = <animation-discharging> <label-discharging>
+format-discharging-padding = 1
+format-discharging-foreground = ${colors.foreground-alt}
+format-discharging-background = ${colors.background-alt}
 
 format-full-prefix = " "
-format-full-prefix-foreground = ${colors.foreground}
+format-full-padding = 1
+format-full-foreground = ${colors.foreground-alt}
+format-full-background = ${colors.background-alt}
 
 ramp-capacity-0 = 
 ramp-capacity-1 = 
 ramp-capacity-2 = 
-ramp-capacity-foreground = ${colors.foreground}
 
 animation-charging-0 = 
 animation-charging-1 = 
 animation-charging-2 = 
-animation-charging-foreground = ${colors.foreground}
 animation-charging-framerate = 750
 
 animation-discharging-0 = 
 animation-discharging-1 = 
 animation-discharging-2 = 
-animation-discharging-foreground = ${colors.foreground}
-animation-discharging-background = ${colors.background}
 animation-discharging-framerate = 750
 
 [module/temperature]

@@ -182,8 +182,8 @@ default_border pixel 1
 # Set gaps
 gaps inner 4
 
-# Start compositor, polybar and set background
-exec --no-startup-id compton -b
+# Start compositor, udiskie, polybar and set background
+exec --no-startup-id picom -b
 exec --no-startup-id udiskie &
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id feh --bg-tile $HOME/.config/i3/bg.png

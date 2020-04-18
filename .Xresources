@@ -38,7 +38,7 @@
 
 ! URxvt Settings
 URxvt.scrollBar:	false
-URxvt.font:			xft:Inconsolata:size=11,\
-					xft:IPAGothic:size=11
+URxvt.font:			xft:Source Code Pro:style=regular:size=9, xft:IPAGothic:size=11
+URxvt.letterSpace:	-1
 URxvt.depth:		32
 URxvt.background:	rgba:ffff/ffff/ffff/dd00
